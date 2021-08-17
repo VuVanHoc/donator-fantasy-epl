@@ -9,3 +9,36 @@ export interface LeagueItem {
   position: number;
   money: number;
 }
+
+export interface GameWeekItem {
+  id: number;
+  team: Team;
+  gameWeek: number;
+  point: number;
+  localPoint: number;
+  transfer: number;
+  position: number;
+  h2hRival: null;
+  h2hWin: boolean;
+  money: number;
+  h2hMoney: number;
+  h2hPoint: number;
+}
+
+export interface Team {
+  id: number;
+  name: string;
+  fplName: string;
+  fplId: number;
+}
+
+export interface H2HItem {
+  team1Name: string;
+  team1Point: number;
+  team1fplId: number;
+  team1fplName: string;
+  team2Name: string;
+  team2Point: number;
+  team2fplId: number;
+  team2fplName: string;
+}

@@ -6,7 +6,12 @@ const useStyles = makeStyles({
     margin: "auto",
     maxWidth: 1220,
   },
-  table: {},
+  table: {
+    margin: "20px 0",
+  },
+  tableHead: {
+    backgroundColor: colors.lightGray,
+  },
   team: {
     color: colors.red,
   },
