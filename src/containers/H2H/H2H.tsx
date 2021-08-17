@@ -211,7 +211,7 @@ export default function H2H() {
           >
             <TableHead className={classes.tableHead}>
               <TableRow>
-                <TableCell>No</TableCell>
+                <TableCell>Rank</TableCell>
                 <TableCell>{`Team & Manager`}</TableCell>
                 <TableCell align="center">Transfer</TableCell>
                 <TableCell align="center">Classic Point</TableCell>
@@ -230,7 +230,7 @@ export default function H2H() {
                     scope="row"
                     className={classes.number}
                   >
-                    {index + 1}
+                    {gameweekItem.position}
                   </TableCell>
                   <TableCell>
                     <a
