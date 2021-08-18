@@ -195,7 +195,7 @@ export default function H2H() {
               <TableRow>
                 <TableCell>Rank</TableCell>
                 <TableCell>{`Team & Manager`}</TableCell>
-                <TableCell align="center">Transfer</TableCell>
+                <TableCell align="center">Transfer made</TableCell>
                 <TableCell align="center">Transfer bonus</TableCell>
                 <TableCell align="center">Classic Point</TableCell>
                 <TableCell align="center">H2H Point</TableCell>
