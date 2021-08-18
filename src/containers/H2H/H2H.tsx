@@ -60,19 +60,6 @@ export default function H2H() {
   }, []);
 
   const dataPieChart = useMemo(() => {
-    // const contributeMoney = gameWeekTables?.filter(
-    //   (gameWeekItem) => gameWeekItem?.h2hMoney + gameWeekItem?.money < 0
-    // );
-    // const totalMoney = contributeMoney?.reduce(
-    //   (previousValue, currentGameWeekItem) => {
-    //     return (
-    //       previousValue +
-    //       currentGameWeekItem.h2hMoney +
-    //       currentGameWeekItem.money
-    //     );
-    //   },
-    //   0
-    // );
     const gameWeekTablesSorted = [...gameWeekTables];
     const listPlayerOrderById = gameWeekTablesSorted.sort(function (a, b) {
       return a.team.id - b.team.id;
@@ -134,11 +121,6 @@ export default function H2H() {
                 options={{
                   title: "Total contribution money",
                 }}
-                // options={{
-
-                //   title: 'Swiss Language Use (100 degree rotation)',
-                //   pieStartAngle: 100,
-                // }}
               />
             </Grid>
             <Grid item xs={6}>
@@ -214,6 +196,7 @@ export default function H2H() {
                 <TableCell>Rank</TableCell>
                 <TableCell>{`Team & Manager`}</TableCell>
                 <TableCell align="center">Transfer</TableCell>
+                <TableCell align="center">Transfer bonus</TableCell>
                 <TableCell align="center">Classic Point</TableCell>
                 <TableCell align="center">H2H Point</TableCell>
                 <TableCell align="center">Classic money</TableCell>
@@ -245,6 +228,9 @@ export default function H2H() {
                   </TableCell>
                   <TableCell align="center" className={classes.number}>
                     {gameweekItem.transfer}
+                  </TableCell>
+                  <TableCell align="center" className={classes.number}>
+                    {gameweekItem.bonusTransfer}
                   </TableCell>
                   <TableCell align="center" className={classes.number}>
                     {gameweekItem.point}

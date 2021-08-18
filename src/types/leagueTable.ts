@@ -8,6 +8,7 @@ export interface LeagueItem {
   point: number;
   position: number;
   money: number;
+  h2hMoney: number;
 }
 
 export interface GameWeekItem {
@@ -23,6 +24,7 @@ export interface GameWeekItem {
   money: number;
   h2hMoney: number;
   h2hPoint: number;
+  bonusTransfer: number;
 }
 
 export interface Team {
